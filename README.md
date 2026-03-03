@@ -11,7 +11,9 @@
     ```sh
     python ./scripts/meta_builder.py
     ```
-- 運行完畢後會在項目根目錄下生成 “cases/” 和 “repos/” 兩個文件夾，分別保存 “所有的cases的patch信息和元數據等” 和 “cases用到的項目” - 人工審計案例從 "cases/" 中選取即可。
+- 運行完畢後會在項目根目錄下生成 “cases/” 和 “repos/” 兩個文件夾，分別保存 “所有的cases的patch信息和元數據等” 和 “cases用到的項目”
+
+- 人工審計案例從 "cases/" 中選取即可。
 
 - 如果需要根據 ratios 來篩選 case id ，可以打開 suspicious_collector.py 修改一下需要的指標和閾值，然後執行腳本：
     ```sh
