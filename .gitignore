@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model data
+Model_data/*
+!Model_data/.gitkeep
+
+# outputs
+cases/*
+!cases/.gitkeep
+
+repos/*
+!repos/.gitkeep
+
+Suspicious_instance/*
+!Suspicious_instance/.gitkeep
+
+Suspicious_instance.json
