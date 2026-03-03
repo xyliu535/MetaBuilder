@@ -1,6 +1,6 @@
 # MetaBuilder
 ## A.使用方法
-- 進入 leaderboard 官網，下滑進入“Analyze Results in Detail”，挑選想要研究的模型，點擊 load data 並點擊 (logs) 進入其 github 項目頁面，找到 “metadata.yaml” ，裏面的 assets 下會給出這個模型產生的 logs 的下載鏈接，下載至（項目根目錄\Model_data\）即可
+- 進入 leaderboard 官網，下滑進入“Analyze Results in Detail”，挑選想要研究的模型，點擊 load data 並點擊 (logs) 進入其 github 項目頁面，找到 “metadata.yaml” ，裏面的 assets 下會給出這個模型產生的 logs 的下載鏈接，下載至（項目根目錄\Model_data\）即可(https://www.swebench.com/)
 - 安裝依賴：
     ```sh 
     python -m venv .venv
