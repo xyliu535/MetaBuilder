@@ -54,6 +54,6 @@
 
 - ratios_computer.py：利用現有信息進行一些 ratios 的計算，並且記錄。後續要對指標計算進行修改就可以直接修改此腳本。 
 
-- meta_builder.py：結合上述腳本，爲每個 case 計算、記錄元數據並保存到 “根目錄\cases\\<case_id>\meta.json” 中。
+- meta_builder.py：結合上述腳本，爲每個 case 計算、記錄元數據並保存到 “根目錄\cases\\<case_id>\meta.json” 中。並且還會把改動涉及到的代碼文件（帶著文件夾路徑一起）複製進來。
 
 - suspicious_collector.py：獨立腳本，用於根據不同的指標和閾值來搜索符合條件的 case_id 並且輸出。可以在裏面修改選擇你想要的 ratios 和閾值。
