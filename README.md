@@ -63,7 +63,10 @@
 
 ## D.測試腳本使用
  - 首先把你寫好的測試腳本放到 caseid 的文件夾內，命名爲 test.py
- - 然後在根目錄啓動終端，輸入:  python3.9 ./scripts/run_case_test.py --case <caseid> --patch <model/pr> --test-script test.py
+ - 然後在根目錄啓動終端，輸入:
+ ```sh
+    python3.9 ./scripts/run_case_test.py --case <caseid> --patch <model/pr> --test-script test.py
+ ```
  - model 或 pr 表示你想應用哪個 patch 進行測試。
  - 別的版本的 python 也許也行，但是有些庫比較老，可能必須用低版本的 python 才不會報錯。
  - 運行後去 caseid 文件夾裏面找到  runs 文件夾，裏面就是運行結果輸出等。
