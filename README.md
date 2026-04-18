@@ -4,10 +4,13 @@
 - 安裝依賴：
     ```sh 
     python -m venv .venv
-    .venv\Scripts\activate
+    .venv\Scripts\activate  //linux : source .venv/bin/activate
     pip install -r requirements.txt 
     ```
 - 運行腳本： 
+    ```sh
+    python ./scripts/patch_collector.py
+    ```
     ```sh
     python ./scripts/meta_builder.py
     ```
@@ -54,6 +57,17 @@
 
 - ratios_computer.py：利用現有信息進行一些 ratios 的計算，並且記錄。後續要對指標計算進行修改就可以直接修改此腳本。 
 
-- meta_builder.py：結合上述腳本，爲每個 case 計算、記錄元數據並保存到 “根目錄\cases\\<case_id>\meta.json” 中。並且還會把改動涉及到的代碼文件（帶著文件夾路徑一起）複製進來。
+- meta_builder.py：結合上述腳本，爲每個 case 計算、記錄元數據並保存到 “根目錄\cases\<case_id>\meta.json” 中。並且還會把改動涉及到的代碼文件（帶著文件夾路徑一起）複製進來。
 
 - suspicious_collector.py：獨立腳本，用於根據不同的指標和閾值來搜索符合條件的 case_id 並且輸出。可以在裏面修改選擇你想要的 ratios 和閾值。
+
+## D.測試腳本使用
+ - 首先把你寫好的測試腳本放到 caseid 的文件夾內，命名爲 test.py
+ - 然後在根目錄啓動終端，輸入:  python3.9 ./scripts/run_case_test.py --case <caseid> --patch <model/pr> --test-script test.py
+ - model 或 pr 表示你想應用哪個 patch 進行測試。
+ - 別的版本的 python 也許也行，但是有些庫比較老，可能必須用低版本的 python 才不會報錯。
+ - 運行後去 caseid 文件夾裏面找到  runs 文件夾，裏面就是運行結果輸出等。
+ 
+ 
+ 
+ 
