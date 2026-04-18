@@ -1,6 +1,6 @@
 # MetaBuilder
 ## A.使用方法
-- 進入 leaderboard 官網，下滑進入“Analyze Results in Detail”，挑選想要研究的模型(目前只支持了Verified)，點擊 load data 並點擊 (logs) 進入其 github 項目頁面，找到 “metadata.yaml” ，裏面的 assets 下會給出這個模型產生的 logs 的下載鏈接，下載至（項目根目錄\Model_data\）即可(https://www.swebench.com/)
+- 進入 leaderboard 官網，下滑進入“Analyze Results in Detail”，挑選想要研究的模型(目前只支持了Verified)，點擊 load data 並點擊 (logs) 進入其 github 項目頁面，找到 “metadata.yaml” ，裏面的 assets 下會給出這個模型產生的 logs 的下載鏈接，下載至（項目根目錄\Model_data\<model_agent_name>\）即可(https://www.swebench.com/)。同時下載 github 項目頁面內的 results.json （同樣下載至項目根目錄\Model_data\<model_agent_name>\）
 - 安裝依賴：
     ```sh 
     python -m venv .venv
@@ -67,7 +67,7 @@
  - model 或 pr 表示你想應用哪個 patch 進行測試。
  - 別的版本的 python 也許也行，但是有些庫比較老，可能必須用低版本的 python 才不會報錯。
  - 運行後去 caseid 文件夾裏面找到  runs 文件夾，裏面就是運行結果輸出等。
- 
+ - 過程中可能會遇到各種依賴 bug ，因為這個腳本還不太完善，而且這些庫的時間也比較老。
  
  
  
