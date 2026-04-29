@@ -1,0 +1,22 @@
+===================================
+MODEL: 20251215_livesweagent_claude-opus-4-5
+===================================
+
+[Type 1]
+resolved in json1 but unresolved in json2
+count: 0
+
+[Type 2]
+unresolved in json1 but resolved in json2
+count: 11
+django__django-16139
+django__django-13401
+django__django-13809
+django__django-14915
+django__django-15499
+django__django-11133
+django__django-16116
+django__django-16595
+django__django-16485
+django__django-14787
+matplotlib__matplotlib-23314

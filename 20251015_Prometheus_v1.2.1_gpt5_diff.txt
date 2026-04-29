@@ -1,0 +1,25 @@
+===================================
+MODEL: 20251015_Prometheus_v1.2.1_gpt5
+===================================
+
+[Type 1]
+resolved in json1 but unresolved in json2
+count: 0
+
+[Type 2]
+unresolved in json1 but resolved in json2
+count: 14
+django__django-16116
+django__django-16595
+matplotlib__matplotlib-23314
+pylint-dev__pylint-7080
+sphinx-doc__sphinx-7440
+django__django-13809
+django__django-16139
+django__django-11133
+django__django-16485
+django__django-15499
+pydata__xarray-4687
+django__django-12325
+django__django-14787
+django__django-14915
